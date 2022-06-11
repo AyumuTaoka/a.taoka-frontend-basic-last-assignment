@@ -1,0 +1,120 @@
+@use "../../variables" as *;
+
+.hearder_wrapper {
+  & * {
+    padding: 0;
+    // padding-left: 0 !important;
+    // padding-right: 0 !important;
+    line-height: 1;
+  }
+  & button {
+    border: none !important;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
+  }
+  & .navbar {
+    // height: 60px;
+    background-color: $black;
+    @media (min-width: $breakpoint-xl) {
+      // height: 90px;
+      background-color: $black_50;
+    }
+    & > .navbar-brand {
+      margin-left: 16px;
+      @media (min-width: $breakpoint-xl) {
+        margin-left: 30px;
+      }
+    }
+    & > button {
+      margin-right: 16px;
+    }
+    & > .navbar-collapse {
+      @media (min-width: $breakpoint-xl) {
+        justify-content: flex-end;
+      }
+      ul {
+        & a {
+          color: $white !important;
+          font-weight: 400;
+          font-size: $fontsize-s;
+        }
+        & > li {
+          @media (min-width: $breakpoint-xl) {
+            margin-right: 40px;
+          }
+          & > a {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+          }
+        }
+        & > li:last-child {
+          margin-right: 50px;
+        }
+        & > li:nth-child(2) {
+          & > a {
+            display: inline-block;
+          }
+          & > button {
+            float: right;
+            @media (min-width: $breakpoint-xl) {
+              display: none;
+            }
+          }
+          & > .dropdown-menu {
+            background-color: $black;
+            top: 0;
+            border-radius: 0;
+            width: 220px;
+            @media (min-width: $breakpoint-xl) {
+              position: relative;
+              margin-bottom: -100%;
+            }
+            & > a {
+              height: 56px;
+              padding: 18px 18px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// a {
+//   color: $white !important;
+//   font-weight: 400;
+//   font-size: $fontsize-s;
+// }
+
+// button {
+//   border: none !important;
+// }
+
+// nav {
+//   background-color: $black;
+//   @media (min-width: $breakpoint-xl) {
+//     background-color: $black_50;
+//   }
+// }
+
+// .navbar-collapse {
+//   @media (min-width: $breakpoint-xl) {
+//     justify-content: flex-end;
+//   }
+// }
+
+// ul {
+//   & > li:nth-child(2) {
+//     & > a {
+//       display: inline-block;
+//     }
+//     & > button {
+//       float: right;
+//       @media (min-width: $breakpoint-xl) {
+//         display: none;
+//       }
+//     }
+//   }
+// }
