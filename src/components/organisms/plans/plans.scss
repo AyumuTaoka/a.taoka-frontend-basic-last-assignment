@@ -1,0 +1,75 @@
+@use "../../variables" as *;
+
+.plan-list {
+  list-style: none;
+  text-align: center;
+  margin-bottom: 24px;
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 0;
+  }
+  padding-inline-start: 0;
+  &.odd {
+    border: solid 1px $gray_gainsboro;
+    & > li:first-child {
+      background-color: $orange_zorba;
+      padding: 20px;
+    }
+  }
+  &.even {
+    border: solid 5px $orange_bistre;
+    & > li:first-child {
+      background-color: $orange_bistre;
+      padding: 15.5px;
+    }
+    & > li:last-child {
+      padding: 30px;
+      @media screen and (min-width: $breakpoint-md) {
+        padding: 20px;
+      }
+    }
+  }
+  & > *:not(:last-child) {
+    border-bottom: solid 1px $gray_gainsboro;
+  }
+  & > li {
+    &:first-child {
+      color: $white;
+      font-weight: 700;
+      font-size: $fontsize-l;
+    }
+  }
+  & > .plan-cost {
+    background-color: $gray_desertStorm;
+    padding: 24px;
+
+    & > .yen {
+      color: $orange_bistre;
+      font-family: "Noto Sans JP";
+      font-size: $fontsize-xxl;
+      font-weight: 700;
+      padding-bottom: 16px;
+      & > span {
+        font-size: $fontsize-l;
+        margin-right: 4px;
+      }
+    }
+    & > .monthly {
+      font-size: $fontsize-s;
+    }
+  }
+  & > .plan-exp {
+    font-size: $fontsize-s;
+    padding: 20px;
+  }
+}
+// ここまで後で消す
+
+// ここから
+.organisms-plans {
+  & > .button {
+    margin: 0 auto 15px auto;
+    @media screen and (min-width: $breakpoint-md) {
+      margin: 40px auto 100px auto;
+    }
+  }
+}
