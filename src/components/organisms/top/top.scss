@@ -24,8 +24,7 @@
   }
   & .wrap_message {
     color: $white;
-    width: 80%;
-    max-width: 1200px;
+    width: 75%;
     margin: auto;
     @media screen and (min-width: $breakpoint-lg) {
       width: 95%;
