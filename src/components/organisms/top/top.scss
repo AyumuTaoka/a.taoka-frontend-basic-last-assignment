@@ -24,12 +24,11 @@
   }
   & .wrap_message {
     color: $white;
-    margin: auto 140px;
-    @media screen and (max-width: $breakpoint-sm) {
-      margin: auto 120px;
-    }
+    width: 80%;
+    max-width: 1200px;
+    margin: auto;
     @media screen and (min-width: $breakpoint-lg) {
-      margin: auto 16.5px;
+      width: 95%;
       padding-bottom: 74px;
     }
   }
