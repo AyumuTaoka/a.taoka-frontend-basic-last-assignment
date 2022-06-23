@@ -52,22 +52,18 @@
 // kokomade
 
 .organisms-cards {
-  & > .row {
-    & > .col {
-      margin-bottom: 40px;
-      @media screen and (min-width: $breakpoint-md) {
-        margin-bottom: 100px;
-        padding-right: 24px;
-        padding-left: 0;
-        &:first-child {
-          padding-left: 24px;
-        }
-      }
-      & > .card {
-        & > .card-body {
-          // margin-bottom: 0 !important;
-        }
-      }
+  padding: 0 4px;
+  @media screen and (min-width: $breakpoint-md) {
+    padding: 0 8px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  & > .card {
+    margin-bottom: 40px;
+    padding: 0;
+    @media screen and (min-width: $breakpoint-md) {
+      margin-bottom: 100px;
     }
   }
 }
