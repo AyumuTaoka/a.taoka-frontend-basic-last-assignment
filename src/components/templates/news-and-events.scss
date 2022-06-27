@@ -10,9 +10,12 @@
   }
   & > .events {
     & > .event-list {
+      @media (min-width: $breakpoint-md) {
+        margin-bottom: 14px;
+      }
       & > .event-card {
         & > a {
-          @media (min-width: $breakpoint-lg) {
+          @media (min-width: $breakpoint-md) {
             height: 142px;
           }
         }
