@@ -3,6 +3,7 @@
   background-color: $black;
   & .top_img {
     background-image: url(./img/top-image.jpg);
+    background-position: center;
     background-size: cover;
     height: 360px;
     @media screen and (min-width: $breakpoint-lg) {
