@@ -1,6 +1,11 @@
 @use "../../variables" as *;
 
 .organisms-plans {
+  padding: 0 24px;
+  margin: 0 auto;
+  @media screen and (min-width: $breakpoint-md) {
+    max-width: 1140px;
+  }
   & > .wrap_message {
     padding: 0 25px 32px;
     @media screen and (min-width: $breakpoint-md) {
@@ -8,7 +13,19 @@
     }
   }
   & > .row {
-    padding: 0 9px;
+    margin: 0;
+    & > .col {
+      padding: 0;
+      @media screen and (min-width: $breakpoint-md) {
+        padding: 0 15px;
+      }
+      &:first-child {
+        padding-left: 0;
+      }
+      &:last-child {
+        padding-right: 0;
+      }
+    }
   }
   & > .button {
     margin: 0 auto 15px;
