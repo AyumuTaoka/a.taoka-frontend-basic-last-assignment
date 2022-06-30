@@ -1,22 +1,36 @@
 @use "../variables" as *;
 
-.news-and-events-wrapper {
+.news-and-events-wrapper-bg {
   background-color: $white_smoke;
-  padding: 56px 1px 59px;
-  & > .news {
-    & > .news-contents-wrapper {
-      background-color: $white;
+  & > .news-and-events-wrapper {
+    margin: 0 auto;
+    padding: 65.5px 20px 66.5px;
+    @media (min-width: $breakpoint-lg) {
+      padding: 56px 16px 59px;
     }
-  }
-  & > .events {
-    & > .event-list {
-      @media (min-width: $breakpoint-md) {
-        margin-bottom: 14px;
+    & > .col-lg-6 {
+      padding: 0;
+      @media (min-width: $breakpoint-lg) {
+        &:first-child {
+          padding-right: 40px;
+        }
       }
-      & > .event-card {
-        & > a {
-          @media (min-width: $breakpoint-md) {
-            height: 142px;
+    }
+    & > .news {
+      & > .news-contents-wrapper {
+        background-color: $white;
+      }
+    }
+    & > .events {
+      & > .event-list {
+        @media (min-width: $breakpoint-lg) {
+          margin-bottom: 14px;
+        }
+        & > .event-card {
+          & > a {
+            @media (min-width: $breakpoint-lg) {
+              height: 142px;
+            }
           }
         }
       }
