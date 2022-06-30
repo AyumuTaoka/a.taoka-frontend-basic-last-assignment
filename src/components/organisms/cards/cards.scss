@@ -10,6 +10,7 @@
 
 .card-text {
   font-size: $fontsize-s;
+  line-height: 33px;
   margin-bottom: 30px;
 }
 // kokomade
@@ -24,7 +25,6 @@
   }
   & > .card {
     margin-bottom: 40px;
-    padding: 0;
     @media screen and (min-width: $breakpoint-md) {
       margin-bottom: 100px;
     }
