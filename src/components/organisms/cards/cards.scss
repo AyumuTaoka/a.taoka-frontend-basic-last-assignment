@@ -13,6 +13,13 @@
   line-height: 33px;
   margin-bottom: 30px;
 }
+
+.card {
+  margin-bottom: 40px;
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 100px;
+  }
+}
 // kokomade
 
 .organisms-cards {
@@ -22,11 +29,5 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
-  }
-  & > .card {
-    margin-bottom: 40px;
-    @media screen and (min-width: $breakpoint-md) {
-      margin-bottom: 100px;
-    }
   }
 }
