@@ -1,7 +1,7 @@
-<div class="hearder_wrapper">
+<header class="hearder_wrapper">
   <nav class="navbar navbar-expand-xl navbar-dark fixed-top">
     <a class="navbar-brand" href="#">
-      <img src="img/header.png" width="120" height="20.56" alt="" />
+      <img src="img/header.png" alt="" />
     </a>
     <button
       class="navbar-toggler"
@@ -19,24 +19,32 @@
           <a class="nav-link" href="#">HOME</a>
         </li>
         <li class="nav-item dropdown">
-          <a
-            class="nav-link"
-            href="#"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-            >CONSEPT</a
+          <div class="conseptBtn-wraper">
+            <a
+              class="nav-link"
+              href="#"
+              data-toggle="dropdown"
+              aria-haspopup="true"
+              aria-expanded="false"
+              >CONSEPT</a
+            >
+            <button
+              type="button"
+              class="btn"
+              data-toggle="collapse"
+              aria-haspopup="true"
+              aria-expanded="false"
+              data-target="#collapseExample"
+            >
+              <img src="./img/Property 1=plus.svg" alt="" />
+            </button>
+          </div>
+          <div
+            class="dropdown-menu"
+            data-toggle="collapse"
+            aria-labelledby="dropdownMenuLink"
+            id="collapseExample"
           >
-          <button
-            type="button"
-            class="btn"
-            data-toggle="dropdown"
-            aria-haspopup="true"
-            aria-expanded="false"
-          >
-            <img src="./img/Property 1=plus.svg" alt="" />
-          </button>
-          <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
             <a class="dropdown-item" href="#">ブログアーカイブ</a>
             <a class="dropdown-item" href="#">お知らせアーカイブ</a>
             <a class="dropdown-item" href="#">イベントアーカイブ</a>
@@ -70,4 +78,4 @@
       </ul>
     </div>
   </nav>
-</div>
+</header>

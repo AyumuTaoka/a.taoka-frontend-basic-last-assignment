@@ -16,9 +16,17 @@
       background-color: $black_50;
     }
     & > .navbar-brand {
-      padding: 20px 0;
+      padding: 15px 0;
       @media (min-width: $breakpoint-xl) {
         padding: 30px 0;
+      }
+      & > img {
+        width: 120px;
+        height: 20.56px;
+        @media (min-width: $breakpoint-xl) {
+          width: 140px;
+          height: 23.99px;
+        }
       }
     }
     & > button {
@@ -30,12 +38,15 @@
       }
       ul {
         & > li {
-          padding: 15px 0;
+          // display: flex;
+          padding: 0;
+          // padding: 15px 0;
           @media (min-width: $breakpoint-xl) {
             padding: 35px 20px;
           }
           & > a {
-            padding: 0;
+            // padding: 0;
+            padding: 15px 0;
             color: $white;
             font-weight: 400;
             font-size: $fontsize-s;
@@ -48,8 +59,6 @@
             }
           }
         }
-        & > li:last-child {
-        }
         & > li:nth-child(2) {
           &:hover {
             & > .dropdown-menu {
@@ -58,19 +67,31 @@
               }
             }
           }
-          & > a {
-            display: inline;
-            @media (min-width: $breakpoint-xl) {
-              display: list-item;
+          & > .conseptBtn-wraper {
+            display: flex;
+            justify-content: space-between;
+
+            & > a {
+              padding: 15px 0;
+              color: $white;
+              font-weight: 400;
+              font-size: $fontsize-s;
+              transition: 0.2s ease;
+              &:hover {
+                @media (min-width: $breakpoint-xl) {
+                  color: $gray_nobel;
+                }
+              }
             }
-          }
-          & > button {
-            width: 26px;
-            height: 26px;
-            float: right;
-            padding: 0;
-            @media (min-width: $breakpoint-xl) {
-              display: none;
+            & > button {
+              margin: auto 0;
+              width: 26px;
+              height: 26px;
+              float: right;
+              padding: 0;
+              @media (min-width: $breakpoint-xl) {
+                display: none;
+              }
             }
           }
           & > .dropdown-menu {
@@ -79,18 +100,14 @@
             padding: 0;
             background-color: $black;
             border-radius: 0;
+            @media (min-width: $breakpoint-xl) {
+              display: none;
+            }
             & > a {
+              font-size: $fontsize-s;
               transition: 0.2s ease;
               color: $white;
               padding: 15px 12px;
-              @media (max-width: $breakpoint-xl) {
-                &:first-child {
-                  padding: 30px 12px 15px;
-                }
-                &:last-child {
-                  padding: 15px 12px 0;
-                }
-              }
               &:hover {
                 background-color: $black;
                 @media (min-width: $breakpoint-xl) {
