@@ -1,25 +1,10 @@
 @use "../../variables" as *;
 
 .organisms-plans {
-  padding: 0 24px;
-  @media screen and (min-width: $breakpoint-md) {
-    padding: 0 9px;
-    //.colにpaddingが15pxついているため、それに合計して24pxになるように調整
-    max-width: 1140px;
-  }
   & > .wrap_message {
     padding: 0 25px 32px;
     @media screen and (min-width: $breakpoint-md) {
       padding: 0 20px 32px;
-    }
-  }
-  & > .row {
-    margin: 0;
-    & > .col {
-      padding: 0;
-      @media screen and (min-width: $breakpoint-md) {
-        padding: 0 15px;
-      }
     }
   }
   & > .button {
