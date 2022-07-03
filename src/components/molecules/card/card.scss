@@ -32,11 +32,13 @@
   flex-direction: column;
   background-color: $white_smoke;
   padding: 32px;
+  z-index: 1;
 }
 
 .card-text {
   font-size: $fontsize-s;
   margin-bottom: 30px;
+  line-height: 33px;
 }
 
 @media screen and (min-width: $breakpoint-md) {
