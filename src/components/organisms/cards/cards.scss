@@ -1,33 +1,14 @@
 @use "../../variables" as *;
-// molecules-card修正部分
-.card-img-top {
-  overflow: hidden;
-}
-
-.card-body {
-  z-index: 1;
-}
-
-.card-text {
-  font-size: $fontsize-s;
-  line-height: 33px;
-  margin-bottom: 30px;
-}
-
-.card {
-  margin-bottom: 40px;
-  @media screen and (min-width: $breakpoint-md) {
-    margin-bottom: 100px;
-  }
-}
-// kokomade
-
 .organisms-cards {
-  padding: 0 4px;
   @media screen and (min-width: $breakpoint-md) {
-    padding: 0 8px;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 24px;
+  }
+  .card {
+    margin-bottom: 40px;
+    @media screen and (min-width: $breakpoint-md) {
+      margin-bottom: 100px;
+    }
   }
 }
