@@ -1,7 +1,7 @@
 @use "../../variables" as *;
 
 .hearder_wrapper {
-  & button {
+  & .btn {
     border: none !important;
     &:focus {
       outline: none;
@@ -20,37 +20,40 @@
       @media (min-width: $breakpoint-xl) {
         padding: 30px 0;
       }
-      & > img {
+      & > .header-logo {
         width: 120px;
-        height: 20.56px;
+        height: 21px;
         @media (min-width: $breakpoint-xl) {
           width: 140px;
-          height: 23.99px;
+          height: 24px;
         }
       }
     }
-    & > button {
+    & > .hanburger-btn {
       padding: 0;
     }
     & > .navbar-collapse {
       @media (min-width: $breakpoint-xl) {
         justify-content: flex-end;
       }
-      ul {
-        & > li {
-          // display: flex;
+      & > .navbar-nav {
+        & > .nav-item {
           padding: 0;
-          // padding: 15px 0;
           @media (min-width: $breakpoint-xl) {
-            padding: 35px 20px;
+            padding: 0 20px;
           }
-          & > a {
-            // padding: 0;
+          & > .nav-link {
             padding: 15px 0;
             color: $white;
             font-weight: 400;
             font-size: $fontsize-s;
             transition: 0.2s ease;
+            @media (min-width: $breakpoint-xl) {
+              padding: 35px 0 34px;
+              // 高さを90pxかつ、
+              // aタグが上下いっぱいに広がるかつ、
+              // paddingを整数値で表すため上下の値が違います。
+            }
             &:hover {
               color: $white;
               @media (min-width: $breakpoint-xl) {
@@ -58,60 +61,64 @@
               }
             }
           }
-        }
-        & > li:nth-child(2) {
-          &:hover {
-            & > .dropdown-menu {
-              @media (min-width: $breakpoint-xl) {
-                display: block;
-              }
-            }
-          }
-          & > .conseptBtn-wraper {
-            display: flex;
-            justify-content: space-between;
-
-            & > a {
-              padding: 15px 0;
-              color: $white;
-              font-weight: 400;
-              font-size: $fontsize-s;
-              transition: 0.2s ease;
-              &:hover {
+          &:nth-child(2) {
+            &:hover {
+              & > .dropdown-menu {
                 @media (min-width: $breakpoint-xl) {
-                  color: $gray_nobel;
+                  display: block;
                 }
               }
             }
-            & > button {
-              margin: auto 0;
-              width: 26px;
-              height: 26px;
-              float: right;
+            & > .conseptBtn-wraper {
+              display: flex;
+              justify-content: space-between;
+              & > .nav-link {
+                padding: 15px 0;
+                color: $white;
+                font-size: $fontsize-s;
+                transition: 0.2s ease;
+                @media (min-width: $breakpoint-xl) {
+                  padding: 35px 0 34px;
+                }
+                &:hover {
+                  @media (min-width: $breakpoint-xl) {
+                    color: $gray_nobel;
+                  }
+                }
+              }
+              & > .btn {
+                margin: auto 0;
+                width: 26px;
+                height: 26px;
+                float: right;
+                padding: 0;
+                @media (min-width: $breakpoint-xl) {
+                  display: none;
+                }
+              }
+            }
+            & > .dropdown-menu {
+              margin: 0;
+              border: none;
               padding: 0;
+              background-color: $black;
+              border-radius: 0;
               @media (min-width: $breakpoint-xl) {
                 display: none;
               }
-            }
-          }
-          & > .dropdown-menu {
-            margin: 0;
-            border: none;
-            padding: 0;
-            background-color: $black;
-            border-radius: 0;
-            @media (min-width: $breakpoint-xl) {
-              display: none;
-            }
-            & > a {
-              font-size: $fontsize-s;
-              transition: 0.2s ease;
-              color: $white;
-              padding: 15px 12px;
-              &:hover {
-                background-color: $black;
+              & > .dropdown-item {
+                font-size: $fontsize-s;
+                transition: 0.2s ease;
+                color: $white;
+                padding: 15px 12px;
                 @media (min-width: $breakpoint-xl) {
-                  background-color: $orange_bistre;
+                  padding: 18px;
+                }
+                &:hover {
+                  background-color: $black;
+                  @media (min-width: $breakpoint-xl) {
+                    background-color: $orange_bistre;
+                  }
                 }
               }
             }
