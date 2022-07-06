@@ -60,6 +60,10 @@
             text-overflow: ellipsis;
             margin-bottom: 8px;
             width: 100%;
+            transition: color 0.2s ease;
+            &:hover {
+              color: $orange_bistre;
+            }
             @media (min-width: $breakpoint-md) {
               white-space: normal;
               word-break: break-all;
