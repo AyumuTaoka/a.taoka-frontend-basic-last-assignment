@@ -1,4 +1,5 @@
 @use "../../variables" as *;
+// fixのマージ後
 .organisms-cards {
   margin-bottom: 0;
   @media screen and (min-width: $breakpoint-md) {
