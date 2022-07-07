@@ -22,7 +22,6 @@
 
     .event-card {
       & > a {
-        height: 80px;
         display: flex;
         text-decoration: none;
 
@@ -76,11 +75,12 @@
           .posted-at {
             color: $gray_nobel;
             font-size: $fontsize-xs;
+            line-height: 14px;
           }
         }
 
         @media (min-width: $breakpoint-md) {
-          height: 134px;
+          height: 141px;
 
           .event-thumbnail {
             display: block;
