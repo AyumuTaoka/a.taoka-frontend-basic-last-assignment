@@ -1,0 +1,36 @@
+@use "../../variables" as *;
+.top_wrapper {
+  background-color: $black;
+  & .top_img {
+    background-image: url(./img/top-image.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 360px;
+    @media screen and (min-width: $breakpoint-lg) {
+      height: 100vh;
+    }
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    & .top_img_content {
+      color: $white;
+      font-family: $fontfamily-mincho;
+      font-size: $fontsize-l;
+      @media screen and (min-width: $breakpoint-lg) {
+        font-size: $fontsize-xl;
+      }
+      writing-mode: vertical-rl;
+      margin-bottom: 0;
+    }
+  }
+  & .wrap_message {
+    color: $white;
+    width: 100%;
+    margin: auto;
+    max-width: 720px;
+    @media screen and (min-width: $breakpoint-lg) {
+      max-width: 960px;
+      padding: 52px 36.5px 74px;
+    }
+  }
+}
