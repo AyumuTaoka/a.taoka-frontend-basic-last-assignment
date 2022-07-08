@@ -53,6 +53,7 @@
           & > h3 {
             color: $black;
             font-size: $fontsize-m;
+            line-height: 23px;
             font-weight: 400;
             overflow: hidden;
             white-space: nowrap;
@@ -72,10 +73,10 @@
             }
           }
 
-          .posted-at {
+          .time {
             color: $gray_nobel;
             font-size: $fontsize-xs;
-            line-height: 14px;
+            line-height: 12px;
           }
         }
 
