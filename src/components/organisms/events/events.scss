@@ -16,13 +16,8 @@
     align-items: stretch;
     margin-bottom: 14px;
 
-    @media (min-width: $breakpoint-md) {
-      margin-bottom: 30px;
-    }
-
     .event-card {
       & > a {
-        height: 80px;
         display: flex;
         text-decoration: none;
 
@@ -54,21 +49,36 @@
           & > h3 {
             color: $black;
             font-size: $fontsize-m;
+            line-height: 23px;
+            font-weight: 400;
             overflow: hidden;
             white-space: nowrap;
             text-overflow: ellipsis;
             margin-bottom: 8px;
             width: 100%;
+            transition: color 0.2s ease;
+            &:hover {
+              color: $orange_bistre;
+            }
+            @media (min-width: $breakpoint-md) {
+              white-space: normal;
+              word-break: break-all;
+              display: -webkit-box;
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: 3;
+            }
           }
 
-          .posted-at {
+          .time {
             color: $gray_nobel;
             font-size: $fontsize-xs;
+            line-height: 12px;
           }
         }
 
         @media (min-width: $breakpoint-md) {
-          height: 134px;
+          height: 142px;
+          // Newsに揃えるために141から142に変更
 
           .event-thumbnail {
             display: block;
