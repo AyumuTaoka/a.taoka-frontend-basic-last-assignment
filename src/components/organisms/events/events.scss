@@ -16,10 +16,6 @@
     align-items: stretch;
     margin-bottom: 14px;
 
-    @media (min-width: $breakpoint-md) {
-      margin-bottom: 30px;
-    }
-
     .event-card {
       & > a {
         display: flex;
@@ -81,7 +77,8 @@
         }
 
         @media (min-width: $breakpoint-md) {
-          height: 141px;
+          height: 142px;
+          // Newsに揃えるために141から142に変更
 
           .event-thumbnail {
             display: block;
