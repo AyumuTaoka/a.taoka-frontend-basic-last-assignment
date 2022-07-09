@@ -1,0 +1,13 @@
+@use "../../variables" as *;
+.organisms-cards {
+  margin-bottom: 0;
+  @media screen and (min-width: $breakpoint-md) {
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+  }
+  .card {
+    margin-bottom: 40px;
+  }
+}
