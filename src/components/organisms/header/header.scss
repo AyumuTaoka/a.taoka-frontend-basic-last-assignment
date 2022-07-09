@@ -1,6 +1,6 @@
 @use "../../variables" as *;
 
-.hearder_wrapper {
+.header-wrapper {
   & .btn {
     border: none !important;
     &:focus {
@@ -29,7 +29,7 @@
         }
       }
     }
-    & > .hanburger-btn {
+    & > .hamburger-btn {
       padding: 0;
     }
     & > .navbar-collapse {
@@ -47,6 +47,7 @@
             color: $white;
             font-weight: 400;
             font-size: $fontsize-s;
+            font-family: $fontfamily-gothic;
             transition: 0.2s ease;
             @media (min-width: $breakpoint-xl) {
               padding: 35px 0 34px;
@@ -69,7 +70,7 @@
                 }
               }
             }
-            & > .conseptBtn-wraper {
+            & > .conceptBtn-wraper {
               display: flex;
               justify-content: space-between;
               & > .nav-link {
