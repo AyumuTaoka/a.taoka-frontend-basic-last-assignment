@@ -1,6 +1,10 @@
 @use "../../variables" as *;
-.about_wrapper {
-  & > .container {
+.about-wrapper {
+  margin-bottom: 40px;
+  @media screen and (min-width: $breakpoint-lg) {
+    margin-bottom: 100px;
+  }
+  .container {
     & > .row {
       & > .col {
         padding: 0;
@@ -9,16 +13,16 @@
         }
       }
     }
-    & > .row:last-child {
-      background-color: $white_smoke;
-      & > .wrap_message {
-        padding: 32px 24px;
-        @media screen and (min-width: $breakpoint-lg) {
-          padding: 52px 26.5px;
-        }
-        & > .message_title {
-          color: $orange_bistre;
-        }
+  }
+  & > .row:last-child {
+    background-color: $white_smoke;
+    & > .wrap_message {
+      padding: 32px 24px;
+      @media screen and (min-width: $breakpoint-lg) {
+        padding: 52px 26.5px;
+      }
+      & > .message_title {
+        color: $orange_bistre;
       }
     }
   }
