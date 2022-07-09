@@ -11,7 +11,7 @@
       }
       & > .news {
         @media (min-width: $breakpoint-lg) {
-          width: 50%;
+          flex: 1;
           padding-right: 20px;
         }
         & > .news-contents-wrapper {
@@ -20,7 +20,7 @@
       }
       & > .events {
         @media (min-width: $breakpoint-lg) {
-          width: 50%;
+          flex: 1;
           padding-left: 20px;
         }
         & > .event-list {
