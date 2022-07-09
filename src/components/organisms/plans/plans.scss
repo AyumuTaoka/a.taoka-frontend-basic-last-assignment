@@ -1,0 +1,16 @@
+@use "../../variables" as *;
+
+.organisms-plans {
+  & > .wrap_message {
+    padding: 0 25px 32px;
+    @media screen and (min-width: $breakpoint-md) {
+      padding: 0 20px 32px;
+    }
+  }
+  & > .button {
+    margin: 0 auto 15px;
+    @media screen and (min-width: $breakpoint-md) {
+      margin: 40px auto 100px;
+    }
+  }
+}
